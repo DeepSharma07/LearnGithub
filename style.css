@@ -1,0 +1,42 @@
+/* /g:/DevOps/Git-repo/style.css */
+
+:root{
+    --bg-start: #071428;
+    --bg-mid:   #0b3252;
+    --bg-end:   #0f4b73;
+    --text:     #eaf4ff;
+}
+
+html,body{
+    height:100%;
+    margin:0;
+    padding:2rem;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-mid) 40%, var(--bg-end) 100%);
+    color: var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* common styles for all headings */
+h1,h2,h3,h4,h5,h6{
+    text-align:center;
+    margin:0.6rem 0;
+    line-height:1.2;
+    text-shadow: 0 2px 6px rgba(2,6,23,0.45);
+}
+
+/* individual heading colors */
+h1{ color: #ffd166; } /* warm yellow */
+h2{ color: #60a5fa; } /* sky blue */
+h3{ color: #7dd3fc; } /* cyan */
+h4{ color: #f472b6; } /* pink */
+h5{ color: #86efac; } /* mint green */
+h6{ color: #c7b2ff; } /* soft purple */
+
+/* small responsive tweak */
+@media (max-width:480px){
+    html,body{ padding:1rem; }
+    h1{ font-size:1.6rem; }
+    h2{ font-size:1.4rem; }
+}
